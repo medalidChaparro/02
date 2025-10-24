@@ -1,0 +1,75 @@
+    -- 💬 CHAT FLOTANTE --
+
+    /* Botón flotante */
+    #chat-button {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+        z-index: 9999;
+    }
+
+    #chat-button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Ventana del chat */
+    #chat-box {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 25px;
+        width: 320px;
+        height: 400px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 9999;
+    }
+
+    #chat-header {
+        background: #007bff;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #chat-messages {
+        flex: 1;
+        padding: 10px;
+        overflow-y: auto;
+        background: #f9f9f9;
+        font-size: 14px;
+    }
+
+    #chat-input-area {
+        display: flex;
+        border-top: 1px solid #ddd;
+    }
+
+    #chat-input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        outline: none;
+    }
+
+    #send-btn {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
